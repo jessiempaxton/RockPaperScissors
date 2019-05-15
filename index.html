@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<title>SET THE TITLE!!!</title>
-	<!--Might be good to link bootstrap here-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/style.css">
+	<title>ROCK PAPER SCISSORS</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
+
 <body>
-	<!--write html below this line-->
-	
-	
-	<!--write html above this line-->
-	<!--the following line is used to link your javascript file.-->
-	<script src="app.js"></script>
+	<header class="container-fluid">
+		<div class="row">
+			<div class="col-12" id="title">
+				<h1>ROCK PAPER SCISSORS</h1>
+			</div>
+		</div>
+	</header>
+	<div class="main container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<span id="computer"><i class="far fa-hand-rock fa-3x"></i></span>
+			</div>
+			<div class="col-6" id="player">
+				<div class="col-4">
+					<i class="far fa-hand-rock fa-3x"></i>
+					<button class="btn btn-success" onclick="">ROCK</btn>
+				</div>
+				<div class="col-4">
+					<i class="far fa-copy fa-3x"></i>
+					<button class="btn btn-success" onclick="">PAPER</btn>
+				</div>
+				<div class="col-4">
+					<i class="far fa-hand-scissors fa-3x"></i>
+					<button class="btn btn-success" onclick="">SCISSORS</btn>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="announce container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h1 id="announce">YOU WIN!</h1>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="col-12" id="scores">
+				<h1>0 : 0</h1>
+			</div>
+		</div>
+	</footer>
+
+	<script src="app/main.js"></script>
 </body>
+
 </html>
